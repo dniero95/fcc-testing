@@ -74,7 +74,7 @@ Browser.site = process.env.URL
 
 
 suite('Functional Tests with Zombie.js', function () {
-  this.timeout(5000);
+  // this.timeout(5000);
 
   const browser = new Browser();
 
