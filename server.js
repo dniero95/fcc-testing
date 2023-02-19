@@ -8,6 +8,8 @@ const runner = require('./test-runner');
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
+require('dotenv').config();
+
 app.get('/', function (req, res) {
   res.sendFile(__dirname + '/views/index.html');
 })
